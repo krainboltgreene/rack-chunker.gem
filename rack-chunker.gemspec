@@ -3,16 +3,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "blankgem/version"
+require "rack/chunker/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "blankgem"
-  spec.version       = Blankgem::VERSION
+  spec.name          = "rack-chunker"
+  spec.version       = Rack::Chunker::VERSION
   spec.authors       = ["Kurtis Rainbolt-Greene"]
   spec.email         = ["me@kurtisrainboltgreene.name"]
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.summary       = %q{Middleware for chunking the body of a response}
   spec.description   = spec.summary
-  spec.homepage      = "http://krainboltgreene.github.io/blankgem"
+  spec.homepage      = "http://krainboltgreene.github.io/rack-chunker"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"]
